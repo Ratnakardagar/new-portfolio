@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="ratnakar_logo-removebg-preview.png" class="logo">
+            <ul>
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1> I,m Ratnakar<span> Dagar</span></h1>
+            <p>This is my official portfolio website to shows all
+                <br> Details and work experiences web development
+            </p>
+            <a href="CV_2024021421475796-1.pdf" download >DOWNLOAD CV</a>
+        </div>
+        <div class="images">
+            <img src="background-images-png-5.png" class="shape">
+            <img src="Anime-Male-PNG-Clipart.png" class="google">
+        </div>
+    </div>
+    <!-----------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="anime-boy-9-295x300.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+               <p>As a second-year B.Tech student majoring in Computer Science, 
+                I am actively seeking an internship opportunity that allows me to bridge the gap between theoretical knowledge and practical application. 
+                My short-term goal is to secure an internship where I can contribute to real-world projects, 
+                collaborate with experienced professionals,and enhance my skills.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML&CSS</span><br>Web Development</li>
+                        <li><span>C/C++</span><br>Programming</li>
+                        <li><span>Python</span><br>Data Science</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>XYZ</span><br>Web Development</li>
+                        <li><span>Let's Upgrade</span><br>Programming</li>
+                        <li><span>Hindu College</span><br>Data Science</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2026</span><br>B-Tech. CSE from DCRUST</li>
+                        <li><span>2022</span><br>12th from Vidya Niketan Sr. Sec. School</li>
+                        <li><span>2020</span><br>10th from Vidya Niketan Sr. Sec. School</li>
+                        
+                    </ul>
+                </div>
+            </div>    
+            </div>
+        </div>
+    </div>
+    <!-----------------Service-------------->
+
+
+
+
+    <!-----------------Service-------------->
+
+    <!----------------poetfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="web-design-png-picture.png">
+                    <div class="layer">
+                        <h3>Web Designing</h3>
+                        <p>Web Designing is the proccesing of creating websites</p>
+                        <a href="#"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work img">
+                    <img src="Case-study-side-image-01.png">
+                    <div class="layer">
+                        <h3>Coding</h3>
+                        <p>Coding is a part for solving problems</p>
+                        <a href="#"><i class="fa fa-link"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------contact------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-send"></i>rinkudagar713@gmail.com</p>
+                    <p><i class="fa fa-phone"></i>9306152898</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <a href="CV_2024021421475796-1.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email-id" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+</body>
+</html>
